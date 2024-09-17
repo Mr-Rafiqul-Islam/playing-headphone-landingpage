@@ -2,9 +2,10 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { SlEarphones } from "react-icons/sl";
 import { UpdateFollower } from "react-mouse-follower";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const Navbar = [
+  const Menulist = [
     {
       id: 1,
       name: "Home",
@@ -34,7 +35,12 @@ const Navbar = () => {
   return (
     <header className="bg-brandDark py-8">
       <div className="container">
-        <nav className="flex justify-between items-center uppercase text-white font-varela">
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="flex justify-between items-center uppercase text-white font-varela"
+        >
           {/* __________logo_________ */}
           <div>
             <a href="/" className="text-xl font-bold">
@@ -44,11 +50,10 @@ const Navbar = () => {
           </div>
           {/* _________menu__________ */}
           <div className="hidden md:block">
-            
-              <ul className="flex items-center gap-x-4">
-                {Navbar.map((item) => (
-                  <li key={item.id}>
-                    <UpdateFollower
+            <ul className="flex items-center gap-x-4">
+              {Menulist.map((item) => (
+                <li key={item.id}>
+                  <UpdateFollower
                     mouseOptions={{
                       backgroundColor: "white",
                       zIndex: 999,
@@ -64,29 +69,28 @@ const Navbar = () => {
                       {item.name}
                     </a>
                   </UpdateFollower>
-                  </li>
-                ))}
-                <div className="text-xl ps-14">
-                  <UpdateFollower
-                    mouseOptions={{
-                      backgroundColor: "white",
-                      zIndex: 999,
-                      mixBlendMode: "difference",
-                      scale: 5,
-                      followSpeed: 1.5,
-                    }}
-                  >
-                    <SlEarphones />
-                  </UpdateFollower>
-                </div>
-              </ul>
-            
+                </li>
+              ))}
+              <div className="text-xl ps-14">
+                <UpdateFollower
+                  mouseOptions={{
+                    backgroundColor: "white",
+                    zIndex: 999,
+                    mixBlendMode: "difference",
+                    scale: 5,
+                    followSpeed: 1.5,
+                  }}
+                >
+                  <SlEarphones />
+                </UpdateFollower>
+              </div>
+            </ul>
           </div>
           {/* __________icons___________  */}
           <div className="block md:hidden">
             <FaBars className="text-xl" />
           </div>
-        </nav>
+        </motion.nav>
       </div>
     </header>
   );
