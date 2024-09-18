@@ -147,6 +147,17 @@ const Hero = () => {
           {/* ___________headphone switcher_________ */}
           <div className="grid grid-cols-3 gap-10">
             {HeadPhoneData.map((item) => (
+              <UpdateFollower 
+              mouseOptions={{
+                backgroundColor: item.bgColor,
+                zIndex: 9999,
+                followSpeed: 0.5,
+                rotate: -720,
+                scale: 5,
+                text:"View Details",
+                textFontSize:"3px"
+                
+              }}>
               <div
                 key={item.id}
                 onClick={() => setActiveIndex(item)}
@@ -162,16 +173,24 @@ const Hero = () => {
                   </p>
                 </div>
               </div>
+              </UpdateFollower>
             ))}
           </div>
         </div>
         {/* ___________headphone image________ */}
         <div className="flex flex-col items-center justify-end">
-          <img
-            src={activeIndex.image}
-            className="w-[300px] md:w-[400px] xl:w-[550px]"
-            alt=""
-          />
+          <AnimatePresence mode="wait">
+              <motion.img
+                key={activeIndex.id}
+                variants={fadeUp(0.3)}
+                initial="hidden"
+                animate="show"
+                exit="exit"
+                src={activeIndex.image}
+                alt=""
+                className="w-[300px] md:w-[400px] xl:w-[550px]"
+              />
+          </AnimatePresence>
         </div>
       </div>
 
