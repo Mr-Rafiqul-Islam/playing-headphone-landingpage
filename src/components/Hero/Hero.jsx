@@ -162,7 +162,7 @@ const Hero = () => {
               <div
                 key={item.id}
                 onClick={() => setActiveIndex(item)}
-                className="grid grid-cols-2 place-items-center cursor-pointer"
+                className="grid grid-cols-2 gap-2 place-items-center cursor-pointer"
               >
                 <div className="">
                   <img src={item.image} alt="" className="w-[200px]" />
