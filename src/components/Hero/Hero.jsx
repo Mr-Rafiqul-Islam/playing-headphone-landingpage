@@ -148,6 +148,7 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-10">
             {HeadPhoneData.map((item) => (
               <UpdateFollower 
+              key={item.id}
               mouseOptions={{
                 backgroundColor: item.bgColor,
                 zIndex: 9999,
