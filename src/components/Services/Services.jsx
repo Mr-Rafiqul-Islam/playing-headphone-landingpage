@@ -1,7 +1,7 @@
 import React from "react";
 import Icon1 from "../../assets/icons/obj1.png";
 import Icon2 from "../../assets/icons/obj2.png";
-import Icon3 from "../../assets/icons/obj1.png";
+import Icon3 from "../../assets/icons/obj3.png";
 import { UpdateFollower } from "react-mouse-follower";
 import { motion } from "framer-motion";
 const ServiceData = [
