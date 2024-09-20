@@ -44,14 +44,17 @@ const BlogsData = [
 
 const Blogs = () => {
   return (
-    <section className="bg-gray-50">
+    <section id="blogs" className="bg-gray-50">
       <div className="container py-14">
         <h1 className="text-3xl font-bold text-center font-poppins pb-8">
           Blogs
         </h1>
-        <motion.div variants={fadeUp(0.4)}
-        initial="hidden"
-        whileInView="show" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <motion.div
+          variants={fadeUp(0.4)}
+          initial="hidden"
+          whileInView="show"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
+        >
           {BlogsData.map((item) => (
             <div key={item.id}>
               <UpdateFollower
@@ -60,8 +63,8 @@ const Blogs = () => {
                   zIndex: 9999,
                   followSpeed: 1.5,
                   scale: 5,
-                  text:"Read",
-                  textFontSize:"3px"
+                  text: "Read",
+                  textFontSize: "3px",
                 }}
               >
                 <div className="flex flex-col items-center justify-center gap-6 p-5 max-w-[300px] mx-auto shadow-lg rounded-md bg-white hover:-translate-y-2 duration-300">

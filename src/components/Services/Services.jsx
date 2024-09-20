@@ -53,10 +53,13 @@ const Services = () => {
     <section id="services" className="bg-gray-100 font-poppins py-8">
       <div className="container py-14">
         <motion.h1
-        variants={fadeUp(0.2)}
-        initial="hidden"
-        whileInView="show"
-        className="text-3xl font-bold text-center pb-10">Services</motion.h1>
+          variants={fadeUp(0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="text-3xl font-bold text-center pb-10"
+        >
+          Services
+        </motion.h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {ServiceData.map((item) => (
             <UpdateFollower

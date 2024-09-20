@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary pt-12 pb-8 text-white">
+    <footer id="contact" className="bg-primary pt-12 pb-8 text-white">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* company details section  */}
@@ -94,10 +94,10 @@ const Footer = () => {
               Follow Us
             </h1>
             <div className="flex items-center gap-3">
-              <FaFacebook className="text-3xl hover:scale-105 duration-300 cursor-pointer" />
-              <FaInstagram className="text-3xl hover:scale-105 duration-300 cursor-pointer" />
-              <FaTelegram className="text-3xl hover:scale-105 duration-300 cursor-pointer" />
-              <FaGoogle className="text-3xl hover:scale-105 duration-300 cursor-pointer" />
+              <FaFacebook className="text-3xl hover:scale-110 duration-300 cursor-pointer" />
+              <FaInstagram className="text-3xl hover:scale-110 duration-300 cursor-pointer" />
+              <FaTelegram className="text-3xl hover:scale-110 duration-300 cursor-pointer" />
+              <FaGoogle className="text-3xl hover:scale-110 duration-300 cursor-pointer" />
             </div>
             <div className="space-y-2">
               <p>Payment Methods</p>
