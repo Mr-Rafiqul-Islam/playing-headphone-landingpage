@@ -1,6 +1,6 @@
 # Animated Headphone Shop Landing Page
-<h1> 💪 Live Demo: </h1>
-<a href="https://choice-headphone-landingpage.vercel.app/" target="_blank">Preview Here</a>
+<h1> 💪 Live Demo: <a href="https://choice-headphone-landingpage.vercel.app/" target="_blank">Preview Here</a></h1>
+
 
 
 
