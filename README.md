@@ -1,3 +1,10 @@
+# Animated Headphone Shop Landing Page
+<h1> 💪 Live Demo: <a href="https://choice-headphone-landingpage.vercel.app/" target="_blank">Preview Here</a></h1>
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
